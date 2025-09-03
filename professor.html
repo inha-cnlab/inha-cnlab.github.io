@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CNLab — Professor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site" role="banner">
+    <div class="header-inner">
+      <div class="brand">CNLab</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Lab</a></li>
+          <li><a aria-current="page" href="professor.html">Professor</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="prof-title">
+      <h1 id="prof-title">Professor</h1>
+      <div class="grid" style="grid-template-columns: 180px 1fr; align-items: start; gap: 20px;">
+        <figure>
+          <img class="img-fit img-round" src="images/professor.jpg" alt="Portrait of Professor Kwon Gu In" />
+          <figcaption>Kwon Gu In</figcaption>
+          <div>
+            <p>Contact: <a href="mailto:gikwon@inha.ac.kr">gikwon@inha.ac.kr</a></p>
+          </div>
+        </figure>
+        
+      </div>
+
+      <hr class="line" />
+
+      <h2>Education</h2>
+      <ul>
+        <li>Ph. D.: Computer Science, Boston University (2005)</li>
+        <li>M.S.: Computer Science, City University of New York (Queens) (1998)</li>
+        <li>B.S.: Computer Science, Inha University (1995)</li>
+      </ul>
+
+      <h2>Course</h2>
+      <ul>
+        <li>CSE3211: Cloud Computing</li>
+        <li>CSE3212: Computer Network</li>
+      </ul>
+
+      <h2>Patents</h2>
+      <ul>
+        <li>무선 네트워크에서 블록 버퍼를 이용한 최대 크기 프레임의 데이터 블록 전송 방식, 2013</li>
+        <li>전 채널 간섭세기 측정을 이용한 무선 데이터 간섭 회피 시스템 및 그 방법(SYSTEM FOR AVOIDING INTERFERENCE OF WIRELESS DATA USING TOTAL CHANNEL AND METHOD THEREFOR), 2012</li>
+        <li>위급 상황 보고 시스템과 그 방법 및 이를 실행하기 위한 프로그램이 기록된 기록매체(SYSTEM AND METHOD FOR REPORTING EMERGENCY AND COMPUT), 2011</li>
+        <li>소거 회복 코드를 이용한 데이터 전송 시스템, 2009</li>
+        <li>개인별 대칭키를 이용한 멀티캐스트를 위한 암호화 및 복호화 시스템, 2009</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site">&copy; <span id="year"></span> CNLab</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

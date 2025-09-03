@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CNLab — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site" role="banner">
+    <div class="header-inner">
+      <div class="brand">CNLab</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a aria-current="page" href="index.html">Lab</a></li>
+          <li><a href="professor.html">Professor</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main id="main">
+  <section aria-labelledby="lab-title" class="hero" style="max-width:960px; margin:28px auto; padding:0 16px;">
+    <h1 id="lab-title">Computer Networks Laboratory</h1>
+    <p class="lead muted">We are currently researching optimization of service function chaining, <br> and the cold-start problem in cloud computing.</p>
+
+  </section>
+
+  <section aria-labelledby="sfc-title" style="max-width:960px; margin:28px auto; padding:0 16px;">
+    <h2 id="sfc-title">SFC Optimization — Background</h2>
+    <figure>
+        <img class="img-fit" src="images/sfc.png" alt="SFC optimization diagram (replace with your image)" />
+      </figure>
+    <div style="display:grid; grid-template-columns: 1fr 300px; gap:18px; align-items:start;">
+      <div>
+        <p>
+          Historically, Service Function Chaining (SFC) optimization has been formulated as mixed-integer
+          linear programs (MILP) and solved with heuristics. Those methods give interpretable, high-quality
+          solutions but often cannot scale or meet online timing requirements. More recently, deep
+          reinforcement learning (DRL) approaches have been explored to enable faster, online decision-making,
+          though they typically reduce interpretability.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="cold-title" style="max-width:960px; margin:28px auto; padding:0 16px;">
+    <h2 id="cold-title">Cold-Start Problem — Background</h2>
+    <div style="display:grid; grid-template-columns: 1fr 300px; gap:18px; align-items:start;">
+      <div>
+        <p>
+          The cold-start problem is the delay and overhead when initializing on-demand software units
+          (containers, serverless functions, or VNFs) in cloud environments. It matters most for systems
+          that require rapid scale-out: startup latency can break strict QoS targets, so understanding
+          and mitigating cold-starts is essential for practical deployments.
+        </p>
+      </div>
+      <figure>
+        <img class="img-fit" src="images/cool.png" alt="Cold-start illustration (replace with your image)" />
+      </figure>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site">&copy; <span id="year"></span> CNLab</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

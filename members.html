@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CNLab — Members</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site" role="banner">
+    <div class="header-inner">
+      <div class="brand">CNLab</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Lab</a></li>
+          <li><a href="professor.html">Professor</a></li>
+          <li><a aria-current="page" href="members.html">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="members-title">
+      <h1 id="members-title">Members</h1>
+      <h2>Master's Students</h2>
+      <div class="grid">
+        <article class="card" aria-label="Member card">
+          <figure>
+          <img class="img-fit" src="images/jaehong-jung.jpg" alt="Portrait of Jung Jae Hong" />
+          </figure>
+          <h3 style="margin:10px 0 6px;">Jung Jae Hong</h3>
+          <p class="muted">Research areas: <br>SFC Optimization</p>
+          <p class="muted">Email: <br><a href="mailto:jjh1126@inha.edu">jjh1126@inha.edu</a></p>
+          
+        </article>
+        <article class="card" aria-label="Member card">
+          <figure>
+            <img class="img-fit" src="images/guntak-kim.jpg" alt="Portrait of Kim Gun Tak" />
+          </figure>
+          <h3 style="margin:10px 0 6px;">Kim Gun Tak</h3>
+          <p class="muted">Research areas: <br>Cloud Computing Computer Networks</p>
+          <p class="muted">Email: <br><a href="mailto:caputdraconis@kakao.com">caputdraconis@kakao.com</a></p>
+        </article>
+      </div>
+
+      <h2>Undergraduates</h2>
+      <div class="grid">
+        <article class="card" aria-label="Member card">
+          <h3 style="margin:10px 0 6px;">Park In Seong</h3>        
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">&copy; <span id="year"></span> CNLab</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
